@@ -19,7 +19,7 @@ function subirArchivo() {
     const formData = new FormData();
     formData.append('file', archivo);
 
-    fetch('http://localhost:3000/api/ipfs/uploadCrustDirect', {
+    fetch('https://api.hachikuji.com/api/ipfs/uploadCrustDirect', {
         method: 'POST',
         body: formData
     }).then(response => response.json())
