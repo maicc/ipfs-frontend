@@ -1,4 +1,5 @@
 const inputArchivo = document.getElementById('miarchivo');
+const inputArchivo2 = document.getElementById('miarchivo2');
 const botonSubir = document.getElementById('btnSubir');
 const botonSubir2 = document.getElementById('btnSubir2');
 const divResultado = document.getElementById('resultado');
@@ -43,7 +44,7 @@ function subirArchivo() {
 }
 
 function subirArchivoKubo() {
-    const archivo = inputArchivo.files[0];
+    const archivo = inputArchivo2.files[0];
 
     if (!archivo) {
         divResultado.innerHTML = 'Por favor selecciona un archivo';
